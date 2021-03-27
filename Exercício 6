@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+  int mat;
+  float dmt, cmp, temp, area, res, rest;
+
+    printf("Digite o diâmetro do fio: \n");
+    scanf("%f", &dmt);
+
+    printf("Digite o comprimento do fio: \n");
+    scanf("%f", &cmp);
+
+    printf("Digite o codigo do material do fio, sendo:\n1 - Prata\n2 - Cobre\n3 - Ouro\n4 - Aluminio\n5 - Tugstênio \n\n");
+    scanf("%d", &mat);
+
+    printf("Digite a temperatura de uso: ");
+    scanf("%f", &temp);
+
+    area=3.14*((dmt/2)*(dmt/2));
+
+    if (mat == 1) {
+      rest=0.00000159*(1+0.038*(temp-20));
+      res=rest*(cmp/area);
+      printf("A resistencia do fio é %f", res);
+    }
+
+    else {
+      if (mat == 2) {
+      rest=0.00000172*(1+0.039*(temp-20));
+      res=rest*(cmp/area);
+      printf("A resistencia do fio é %f", res);
+      }
+      else {
+        if (mat == 3) {
+      rest=0.00000244*(1+0.034*(temp-20));
+      res=rest*(cmp/area);
+      printf("A resistencia do fio é %f", res);
+        }
+        else {
+          if (mat == 4) {
+      rest=0.00000292*(1+0.039*(temp-20));
+      res=rest*(cmp/area);
+      printf("A resistencia do fio é %f", res);
+    }
+          else {
+            if (mat == 5) {
+      rest=0.0000056*(1+0.045*(temp-20));
+      res=rest*(cmp/area);
+      printf("A resistencia do fio é %f", res);
+    }
+          }
+        }
+      }
+    }
+
+  return 0;
+}
