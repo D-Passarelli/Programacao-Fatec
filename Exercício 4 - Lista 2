@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+main (){
+	
+	int botao, resp, seconds;
+	
+	printf("Botao do pisca alerta esta ligado?\n\n");
+	printf("Digite 1 para ligado: \n");
+	printf("Digite 2 para desligado: \n\n\n");
+	scanf("%i", &resp);
+	
+	if(resp=1){
+		botao=1;
+	}
+	else{
+		botao=0;
+	}
+	
+	while(botao=1){
+		
+		system("cls");
+		
+		printf("\nLIGADO!!\n");
+		printf("\nLIGADO!!\n");
+		printf("\nLIGADO!!\n");
+		printf("\nLIGADO!!\n");
+		printf("\nLIGADO!!\n");
+		
+	}
+	
+system("pause");
+return 0;
+		
+}
